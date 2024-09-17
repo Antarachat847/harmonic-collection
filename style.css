@@ -1,3 +1,10 @@
 body {
   font-family: sans-serif;
 }
+/* Assuming the image is in the "images" folder */
+.kantha-image {
+  background-size: cover; /* Adjust to fit the container */
+  background-position: center; /* Center the image */
+  width: 100%; /* Make the image full width */
+  height: 300px; /* Adjust the height as needed */
+}
