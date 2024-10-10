@@ -1,14 +1,14 @@
 const words = ["Folkart", "फोल्कार्ट", "ଫୋଲକର୍ତ୍ତ", "ફોલકરત", "போல்கர்ட்", "ఫాల్కర్ట్", "فولکرٹ", "ফলকার্ট"];
-const colors = ["#FF5733", "#33FF57", "#5733FF", "#FF33A1", "#33FFF2", "#FFC133", "#Be443d", "#FF33A1"];
+const colors = ["#FF5733", "#20492F", "#FD8916", "#8F00FF", "#0000FF", "#0e9594", "#Be443d", "#FF33A1"];
 const fonts = [
-  "'courier', sans-serif", // Font for "Folkart"
-  "'Mangal', sans-serif",      // Font for "फोल्कार्ट"
-  "'Noto Sans Oriya', sans-serif", // Font for "ଫୋଲକର୍ତ୍ତ"
-  "'Shruti', sans-serif",      // Font for "ફોલકરત"
-  "'Lohit Tamil', sans-serif", // Font for "போல்கர்ட்"
-  "'Noto Sans Telugu', sans-serif", // Font for "ఫాల్కర్ట్"
-  "'Noto Naskh Arabic', sans-serif", // Font for "فولکرٹ"
-  "'Noto Serif Bengali', sans-serif" // Font for "ফলকার্ট"
+  "'courier', sans-serif", 
+  "'Mangal', sans-serif",      
+  "'Noto Sans Oriya', sans-serif", 
+  "'Shruti', sans-serif",      
+  "'Lohit Tamil', sans-serif", 
+  "'Noto Sans Telugu', sans-serif", 
+  "'Noto Naskh Arabic', sans-serif", 
+  "'Noto Serif Bengali', sans-serif" 
 ];
 
 let wordIndex = 0;
