@@ -3,16 +3,25 @@ body{
     margin: 0;
     font-family:'ariel',sans-serif;
 }
-    nav{
-        height: 60px;
-        background:#0c7213;
-        margin-top: 0%;
-    }
+nav {
+    height: 60px;
+    background: #0c7213;
+    margin: 0; /* Remove any margin from the nav */
+    padding: 0; /* Ensure no padding */
+    position: fixed; /* Stick the nav to the top if needed */
+    width: 100%; /* Ensure it spans the full width */
+    top: 0;
+    left: 0;
+    z-index: 999; /* Ensure it's above other elements */
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     
-    ul {
-        list-style: none;
-        
-    }
+}
     
     ul li {
         display: inline-block;
@@ -121,7 +130,8 @@ body{
     width: 100%;
     height: auto;
     display: block; 
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
+    padding-top: 50px; 
     padding-left: 0px;
     padding-right: 15px;
 }
