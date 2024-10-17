@@ -68,7 +68,7 @@ ul {
     .about-dropdown {
         position: relative;
         display: inline-block;
-        padding-left: 925px;
+        padding-left: 980px;
        
       }
       
@@ -77,13 +77,13 @@ ul {
         position: absolute;
         background-color:antiquewhite;
         padding: 15px;
-        width: 225px;
-        height: 350px;
+        width: 250px;
+        height: 400px;
         top: 100%; 
         left: 0;
         z-index: 1000;
         box-shadow: 0 4px 8px #f43924(0, 0, 0, 0.1);
-        margin-left: 850px;
+        margin-left: 880px;
         border-radius: 10px;
     }
       
@@ -109,8 +109,9 @@ ul {
     .about-text-box p {
         margin: 0;
         font-size: 14px;
-        color: rgb(221, 64, 12);
+        color: rgb(201, 41, 12);
         font-family: 'playfair display', serif;
+        letter-spacing: 2px;
     }
     
     
@@ -171,6 +172,7 @@ ul {
 }
 
 
+
 .pic {
     width: 300px;
     height: 400px;
@@ -191,15 +193,34 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+    display: flex; 
+    align-items: center;  /* Vertically centers the content */
+    justify-content: center;  /* Horizontally centers the content */
+    color: antiquewhite;
     font-size: 16px;
     opacity: 0;
-    background: rgb(241, 43, 3);
+    background: rgb(233, 42, 13); 
     transition: opacity 0.3s ease;
     pointer-events: none;
+    text-align: center;
+ 
+ 
+}
+
+/* Container to hold both heading and description */
+.overlay-content {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;  
+}
+
+.description {
+    font-family: 'Playfair Display', serif;  
+    font-style: italic;
+    font-size: 14px;  
+    color: antiquewhite; 
+    margin-top: 5px; 
+    max-width: 80%;
 }
 
 .pic:hover img {
