@@ -68,8 +68,8 @@ body{
         position: absolute;
         background-color:rgba(175, 22, 22, 0.84);
         padding: 15px;
-        width: 225px;
-        height: 350px;
+        width: 250px;
+        height: 360px;
         top: 100%; 
         left: 0;
         z-index: 1000;
@@ -102,6 +102,7 @@ body{
         font-size: 14px;
         color: antiquewhite;
         font-family: 'playfair display', serif;
+        
     }
     
     * {
@@ -147,7 +148,7 @@ body{
 }
 
 .headergallery{
-    color:antiquewhite;
+    color:#E5DFB4;
     font-family: 'Hammersmith One', sans-serif;
     letter-spacing: 1.5em;
 
@@ -201,7 +202,7 @@ body{
     color: rgb(175, 22, 22);
     font-size: 16px;
     opacity: 0;
-    background: antiquewhite; 
+    background: #E5DFB4; 
     transition: opacity 0.3s ease;
     pointer-events: none;
     text-align: center;
