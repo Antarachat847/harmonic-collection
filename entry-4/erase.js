@@ -1,33 +1,59 @@
-const canvas = document.getElementById('revealCanvas');
-const ctx = canvas.getContext('2d');
-const img = new Image();
+// Get the canvas and its context
+let canvas = document.getElementById('eraserCanvas');
+let ctx = canvas.getContext('2d');
 
-// Set canvas size to the window size
+// Adjust canvas size to the window size
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-// Load the background image
-img.src = 'images/Pattachitra.jpg'; // Update the image path based on your folder structure
+// Fill the canvas with the maroon color
+ctx.fillStyle = '#E5DFB4';
+let rectWidth = 930;  // Width of the rectangle
+let rectHeight = 160;  // Height of the rectangle
 
-img.onload = function() {
-  ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-  ctx.globalCompositeOperation = 'destination-out'; // Sets the blend mode to "erase"
-};
+// Calculate the x and y coordinates to center the rectangle
+let centerX = (canvas.width - rectWidth) / 2;
+let centerY = (canvas.height - rectHeight) / 2;
 
-// Add an event listener for the mouse movement to "erase" the canvas
-canvas.addEventListener('mousemove', function(e) {
-  const x = e.clientX;
-  const y = e.clientY;
-  const radius = 40; // The size of the brush/eraser
+// Draw the rectangle centered on the canvas
+ctx.fillRect(centerX, centerY, rectWidth, rectHeight);
 
-  ctx.beginPath();
-  ctx.arc(x, y, radius, 0, Math.PI * 2, false);
-  ctx.fill();
+// Dynamically set the font size based on canvas size
+let fontSize = Math.min(canvas.width * 0.05, 40); // Adjusts font size to 5% of canvas width, max 40px
+ctx.font = `18px 'Hammersmith One'`; // Use Hammersmith One font
+ctx.fillStyle = 'maroon';  // Set the text color to maroon
+ctx.textAlign = 'center';
+ctx.textBaseline = 'middle';
+
+// Add the custom text 'd r a w   m e' in the center of the rectangle
+ctx.fillText('d r a w   m e', canvas.width / 2, canvas.height / 2);  // Check for parentheses here
+
+// Eraser settings
+ctx.globalCompositeOperation = 'destination-out';
+ctx.lineJoin = 'round';
+ctx.lineCap = 'round';
+ctx.lineWidth = 120;
+
+let isErasing = false;
+
+function erase(e) {
+    if (!isErasing) return;
+
+    let x = e.clientX;
+    let y = e.clientY;
+
+    ctx.beginPath();
+    ctx.arc(x, y, ctx.lineWidth / 2, 0, Math.PI * 2);  // Ensure all parentheses are closed
+    ctx.fill();
+}
+
+canvas.addEventListener('mousedown', function (e) {
+    isErasing = true;
+    erase(e);  // Erase on the first click
 });
 
-// Ensure the canvas resizes with the window
-window.addEventListener('resize', function() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+canvas.addEventListener('mouseup', function () {
+    isErasing = false;
 });
+
+canvas.addEventListener('mousemove', erase);
