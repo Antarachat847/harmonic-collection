@@ -6,13 +6,13 @@ body{
 nav {
     height: 60px;
     background: #f43924;
-    margin: 0; /* Remove any margin from the nav */
-    padding: 0; /* Ensure no padding */
-    position: fixed; /* Stick the nav to the top if needed */
-    width: 100%; /* Ensure it spans the full width */
+    margin: 0;
+    padding: 0; 
+    position: fixed;
+    width: 100%; 
     top: 0;
     left: 0;
-    z-index: 999; /* Ensure it's above other elements */
+    z-index: 999;
 }
 
 
