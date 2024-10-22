@@ -5,7 +5,7 @@ body{
 }
 nav {
     height: 60px;
-    background: #0c7213;
+    background: #0cb817;
     margin: 0; /* Remove any margin from the nav */
     padding: 0; /* Ensure no padding */
     position: fixed; /* Stick the nav to the top if needed */
@@ -46,7 +46,7 @@ ul {
         top: 100%; 
         left: 0;
         width: 200px;
-        background-color: #0c7213;
+        background-color: #0cb817;
         border-radius: 10px;
         z-index: 999;
         display: none; 
@@ -58,7 +58,7 @@ ul {
     }
     
     ul li a:hover {
-        background-color: #f43924;
+        background-color: rgb(244, 12, 108); 
     }
     
     ul li:hover ul.dropdown {
@@ -82,7 +82,7 @@ ul {
         top: 100%; 
         left: 0;
         z-index: 1000;
-        box-shadow: 0 4px 8px #f43924(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgb(244, 12, 108); 
         margin-left: 880px;
         border-radius: 10px;
     }
@@ -109,7 +109,7 @@ ul {
     .about-text-box p {
         margin: 0;
         font-size: 14px;
-        color: rgb(201, 41, 12);
+        color: rgb(244, 12, 108); 
         font-family: 'playfair display', serif;
         letter-spacing: 2px;
     }
@@ -141,7 +141,7 @@ ul {
     margin-top: 0px;
     padding-top: 20px;
     padding-left: 50px;
-    background-color:  rgb(233, 42, 13); 
+    background-color: rgb(244, 12, 108);  
 }
 
 .headergallery{
@@ -164,7 +164,7 @@ ul {
     grid-template-columns: 350px 350px 350px;
     justify-content: center;
     gap: 20px;
-    background-color: rgb(233, 42, 13); 
+    background-color: rgb(244, 12, 108); 
     font-family: 'Hammersmith One', sans-serif;
     letter-spacing: 4px;
     
@@ -194,12 +194,12 @@ ul {
     width: 100%;
     height: 100%;
     display: flex; 
-    align-items: center;  /* Vertically centers the content */
-    justify-content: center;  /* Horizontally centers the content */
+    align-items: center;  
+    justify-content: center;  
     color: antiquewhite;
     font-size: 16px;
     opacity: 0;
-    background: #0c7213;; 
+    background: #0cb817; 
     transition: opacity 0.3s ease;
     pointer-events: none;
     text-align: center;
