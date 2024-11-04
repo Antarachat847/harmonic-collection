@@ -2,6 +2,7 @@
 body{
     margin: 0;
     font-family:'ariel',sans-serif;
+    background-color: antiquewhite;
 }
 nav {
     height: 60px;
@@ -75,7 +76,7 @@ ul {
     .about-text-box {
         display: none;
         position: absolute;
-        background-color:antiquewhite;
+        background-color:rgba(250, 235, 215, 0.845);
         padding: 15px;
         width: 250px;
         height: 400px;
@@ -102,7 +103,7 @@ ul {
     }
       
     .about-dropdown a:hover {
-        color: antiquewhite;
+        color: rgba(250, 235, 215, 0.724);
     }
       
     
@@ -156,27 +157,28 @@ ul {
     padding: 20px 0;
 }
 .gallery p {
-    padding-top: 20px;
     font-family: 'playfair display', serif;
     font-size: 15px;
     color: rgb(31, 90, 25);
     text-align: center;
     padding-right: 40px;
 }
-.container {
-    padding-top: 50px;
-   width: 1425px;
-    display: grid;
-    grid-template-rows: 450px 450px;
-    grid-template-columns: 350px 350px 350px;
-    justify-content: center;
-    gap: 20px;
-    background-color: antiquewhite;
-    font-family: 'Hammersmith One', sans-serif;
-    letter-spacing: 4px;
+    .container {
+        padding-top: 50px;
+        width: 1425px;
+         display: grid;
+         grid-template-rows: 450px 450px;
+         grid-template-columns: 350px 350px 350px;
+         justify-content: center;
+         gap: 20px;
+         background-color: antiquewhite;
+         font-family: 'Hammersmith One', sans-serif;
+         letter-spacing: 4px;
+         padding-left: 50px;
+         
+    }
     
-    
-}
+
 
 
 
