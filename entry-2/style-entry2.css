@@ -155,7 +155,14 @@ ul {
     text-align: center;
     padding: 20px 0;
 }
-
+.gallery p {
+    padding-top: 20px;
+    font-family: 'playfair display', serif;
+    font-size: 15px;
+    color: rgb(31, 90, 25);
+    text-align: center;
+    padding-right: 40px;
+}
 .container {
     padding-top: 50px;
    width: 1425px;
