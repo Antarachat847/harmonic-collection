@@ -38,7 +38,7 @@ ul {
     top: 100%;
     left: 0;
     width: 200px;
-    background-color: rgb(8, 214, 255);
+    background-color: rgb(255, 189, 8);
     border-radius: 10px;
     z-index: 999;
     display: none;
@@ -70,7 +70,7 @@ ul {
  .about-text-box {
     display: none;
     position: absolute;
-    background-color: rgb(156, 242, 255);
+    background-color:  rgb(255, 189, 8);
     padding: 15px;
     width: 250px;
     height: 300px;
@@ -118,7 +118,8 @@ ul {
 }
 
 .headergallery {
-    color: aliceblue;
+    padding-top: 20px;
+    color: rgb(251, 233, 148);
     font-family: 'Hammersmith One', sans-serif;
     letter-spacing: 1.5em;
 }
@@ -150,7 +151,7 @@ ul {
 .gallery p {
     font-family: 'Playfair Display', serif;
     font-size: 15px;
-    color:aliceblue;
+    color:rgb(251, 233, 148);
     text-align: center;
 }
 
@@ -196,7 +197,7 @@ ul {
     color: rgb(255, 8, 8);
     font-size: 16px;
     opacity: 0;
-    background:rgb(156, 242, 255);
+    background: rgb(255, 189, 8);
     transition: opacity 0.3s ease;
     pointer-events: none;
     text-align: center;
