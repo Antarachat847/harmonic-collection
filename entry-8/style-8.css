@@ -56,7 +56,7 @@ ul li ul.dropdown li {
 }
 
 ul li a:hover {
-    background-color: rgb(255, 254, 243);
+    background-color: rgb(112, 28, 18);
 }
 
 ul li:hover ul.dropdown {
@@ -72,14 +72,14 @@ ul li:hover ul.dropdown {
 .about-text-box {
     display: none;
     position: absolute;
-    background-color: #d0123e;
+    background-color: #d0123ed9;
     padding: 15px;
     width: 250px;
     height: 400px;
     top: 100%;
     left: 0;
     z-index: 1000;
-    box-shadow: 0 4px 8px rgb(255, 254, 243);
+    box-shadow: 0 4px 8px #d0123e00;
     margin-left: 880px;
     border-radius: 10px;
 }
@@ -98,7 +98,7 @@ ul li:hover ul.dropdown {
 }
 
 .about-dropdown a:hover {
-    color: rgb(255, 243, 248);
+    color: rgb(112, 28, 18);
 }
 
 .about-text-box p {
