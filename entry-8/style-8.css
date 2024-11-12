@@ -221,3 +221,23 @@ ul li:hover ul.dropdown {
     font-style: italic;
     font-size: 14px;
     color: #d51c60;
+    margin-top: 5px;
+    max-width: 80%;
+}
+
+.pic:hover img {
+    filter: blur(5px);
+    opacity: 0.6;
+}
+
+.pic:hover .overlay {
+    opacity: 1;
+}
+
+/* Grid positioning for each picture */
+.pic1 { grid-row-start: 1; grid-column-start: 1; }
+.pic2 { grid-row-start: 1; grid-column-start: 2; }
+.pic3 { grid-row-start: 1; grid-column-start: 3; }
+.pic4 { grid-row-start: 2; grid-column-start: 1; }
+.pic5 { grid-row-start: 2; grid-column-start: 2; }
+.pic6 { grid-row-start: 2; grid-column-start: 3; }
