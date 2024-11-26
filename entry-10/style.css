@@ -61,7 +61,7 @@ ul {
     }
     
     ul li a:hover {
-        background-color: rgb(244, 12, 108); 
+        background-color: rgb(248, 207, 209); 
     }
     
     ul li:hover ul.dropdown {
@@ -78,7 +78,7 @@ ul {
     .about-text-box {
         display: none;
         position: absolute;
-        background-color:rgba(244, 12, 109, 0.633);
+        background-color:rgb(248, 207, 209); 
         padding: 15px;
         width: 250px;
         height: 400px;
@@ -134,7 +134,7 @@ ul {
   .gallery {
     margin: 0 auto;
    padding-top: 10px;
-    background-color: rgb(244, 12, 108); /* Magenta background */
+    background-color: rgb(248, 207, 209); 
     color: antiquewhite;
     position: relative;
     z-index: 2;
@@ -144,10 +144,10 @@ ul {
   /* Mughal Dome Styling */
   .mughal-dome {
     position: absolute;
-    top: -1200px; 
+    top: -710px; 
     left: 50%;
     transform: translateX(-50%);
-    width: 2500px;
+    width: 1430px;
     z-index: 3; /* Above gallery text */
   }
   
@@ -161,11 +161,11 @@ ul {
     margin-top: 0px;
     padding-top: 20px;
     padding-left: 50px;
-    background-color: rgb(244, 12, 108);  
+    background-color: rgb(248, 207, 209); 
 }
 
 .headergallery{
-    color:antiquewhite;
+    color:#015807;
     font-family: 'Hammersmith One', sans-serif;
     letter-spacing: 1.5em;
 
@@ -178,7 +178,7 @@ ul {
 .gallery p {
     font-family: 'playfair display', serif;
     font-size: 15px;
-    color: antiquewhite;
+    color: #015807;
     text-align: center;
     padding-right: 40px;
 }
@@ -190,7 +190,7 @@ ul {
      grid-template-columns: 350px 350px 350px;
      justify-content: center;
      gap: 20px;
-     background-color:  rgb(244, 12, 108);
+     background-color: rgb(248, 207, 209); 
      font-family: 'Hammersmith One', sans-serif;
      letter-spacing: 4px;
      padding-left: 50px;
@@ -231,7 +231,6 @@ ul {
  
 }
 
-/* Container to hold both heading and description */
 .overlay-content {
     display: flex;
     flex-direction: column;  
