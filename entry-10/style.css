@@ -1,0 +1,159 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  .parallax {
+    /* Adjust the size and placement */
+    background-image: url('images-10/ENTRY10.png'); 
+    height: 100vh;
+    background-attachment: fixed; /* Fixed attachment creates the parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  .gallery {
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-left: 50px;
+    background-color: rgb(244, 12, 108);  
+}
+
+.headergallery{
+    color:antiquewhite;
+    font-family: 'Hammersmith One', sans-serif;
+    letter-spacing: 1.5em;
+
+}
+
+.header-area {
+    text-align: center;
+    padding: 20px 0;
+}
+.gallery p {
+    font-family: 'playfair display', serif;
+    font-size: 15px;
+    color: antiquewhite;
+    text-align: center;
+    padding-right: 40px;
+}
+.container {
+    padding-top: 50px;
+    width: 1425px;
+     display: grid;
+     grid-template-rows: 450px 450px;
+     grid-template-columns: 350px 350px 350px;
+     justify-content: center;
+     gap: 20px;
+     background-color:  rgb(244, 12, 108);
+     font-family: 'Hammersmith One', sans-serif;
+     letter-spacing: 4px;
+     padding-left: 50px;
+     
+}
+
+.pic {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.pic .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    align-items: center;  
+    justify-content: center;  
+    color: antiquewhite;
+    font-size: 16px;
+    opacity: 0;
+    background: #0cb817; 
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    text-align: center;
+ 
+ 
+}
+
+/* Container to hold both heading and description */
+.overlay-content {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;  
+}
+
+.description {
+    font-family: 'Playfair Display', serif;  
+    font-style: italic;
+    font-size: 14px;  
+    color: antiquewhite; 
+    margin-top: 5px; 
+    max-width: 80%;
+}
+
+.pic:hover img {
+    filter: blur(5px);
+    opacity: 0.6;
+}
+
+.pic:hover .overlay {
+    opacity: 1;
+}
+
+.pic1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.pic2 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.pic3 {
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+
+.pic4 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+.pic5 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.pic6 {
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+
+  h1, p {
+    margin: 0;
+    padding: 1rem;
+  }
