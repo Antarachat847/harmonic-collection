@@ -1,29 +1,162 @@
+/* General Reset */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow-x: hidden;
+    background-color: transparent;
   }
-  
+  nav {
+    height: 60px;
+    background: #015807;
+    margin: 0; /* Remove any margin from the nav */
+    padding: 0; /* Ensure no padding */
+    position: fixed; /* Stick the nav to the top if needed */
+    width: 100%; /* Ensure it spans the full width */
+    top: 0;
+    left: 0;
+    z-index: 999; /* Ensure it's above other elements */
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+    
+    ul li {
+        display: inline-block;
+        position: relative;
+    }
+    
+    ul li a {
+        display: block;
+        padding: 20px 25px;
+        text-decoration: none;
+        color: antiquewhite;
+        font-family: 'Hammersmith One', sans-serif;
+        letter-spacing: 4px;
+        text-align:left; 
+        font-size: 16px;
+        padding-right: 55px;
+    }
+    
+    ul li ul.dropdown {
+        display: block;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 200px;
+        background-color: #015807;
+        border-radius: 10px;
+        z-index: 999;
+        display: none; 
+    }
+    
+    ul li ul.dropdown li {
+        display: block;
+       
+    }
+    
+    ul li a:hover {
+        background-color: rgb(244, 12, 108); 
+    }
+    
+    ul li:hover ul.dropdown {
+        display: block; 
+    }
+
+    .about-dropdown {
+        position: relative;
+        display: inline-block;
+        padding-left: 980px;
+       
+      }
+      
+    .about-text-box {
+        display: none;
+        position: absolute;
+        background-color:rgba(244, 12, 109, 0.633);
+        padding: 15px;
+        width: 250px;
+        height: 400px;
+        top: 100%; 
+        left: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(244, 12, 109, 0); 
+        margin-left: 880px;
+        border-radius: 10px;
+    }
+      
+    
+    .about-dropdown:hover .about-text-box {
+        display: block;
+    }
+      
+    .about-dropdown a {
+        text-decoration: none;
+        color: rgb(250, 235, 215);
+        font-family: 'Hammersmith One', sans-serif;
+        letter-spacing: 4px;
+        padding: 10px;
+        display: inline-block;
+    }
+      
+    .about-dropdown a:hover {
+        color: antiquewhite;
+    }
+      
+    
+    .about-text-box p {
+        margin: 0;
+        font-size: 14px;
+        color: antiquewhite; 
+        font-family: 'playfair display', serif;
+        letter-spacing: 2px;
+    }
+    
+    
+  /* Parallax Background */
   .parallax {
-    /* Adjust the size and placement */
-    background-image: url('images-10/ENTRY10.png'); 
+    background-image: url('images-10/Revised bg.png'); /* Replace with your image */
     height: 100vh;
-    background-attachment: fixed; /* Fixed attachment creates the parallax effect */
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    z-index: 1;
   }
   
-  .content {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #f0f0f0;
+  /* Gallery Section */
+  .gallery {
+    margin: 0 auto;
+   padding-top: 10px;
+    background-color: rgb(244, 12, 108); /* Magenta background */
+    color: antiquewhite;
+    position: relative;
+    z-index: 2;
+    transform: translateY(0); /* Start position for parallax */
   }
+  
+  /* Mughal Dome Styling */
+  .mughal-dome {
+    position: absolute;
+    top: -1200px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2500px;
+    z-index: 3; /* Above gallery text */
+  }
+  
+  .mughal-dome img {
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+  }
+  
   .gallery {
     margin-top: 0px;
     padding-top: 20px;
@@ -90,7 +223,7 @@ body, html {
     color: antiquewhite;
     font-size: 16px;
     opacity: 0;
-    background: #0cb817; 
+    background:#015807;
     transition: opacity 0.3s ease;
     pointer-events: none;
     text-align: center;
@@ -152,8 +285,3 @@ body, html {
     grid-row-start: 2;
     grid-column-start: 3;
 }
-
-  h1, p {
-    margin: 0;
-    padding: 1rem;
-  }
