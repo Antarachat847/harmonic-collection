@@ -9,13 +9,13 @@ body, html {
   nav {
     height: 60px;
     background: #015807;
-    margin: 0; /* Remove any margin from the nav */
-    padding: 0; /* Ensure no padding */
-    position: fixed; /* Stick the nav to the top if needed */
-    width: 100%; /* Ensure it spans the full width */
+    margin: 0; 
+    padding: 0; 
+    position: fixed; 
+    width: 100%; 
     top: 0;
     left: 0;
-    z-index: 999; /* Ensure it's above other elements */
+    z-index: 999; 
 }
 
 
@@ -154,7 +154,7 @@ ul {
   .mughal-dome img {
     width: 100%;
     height: auto;
-    opacity: 0.9;
+    opacity: 1;
   }
   
   .gallery {
@@ -193,7 +193,6 @@ ul {
      background-color: rgb(248, 207, 209); 
      font-family: 'Hammersmith One', sans-serif;
      letter-spacing: 4px;
-     padding-left: 50px;
      
 }
 
@@ -220,7 +219,7 @@ ul {
     display: flex; 
     align-items: center;  
     justify-content: center;  
-    color: antiquewhite;
+    color: rgb(248, 207, 209); 
     font-size: 16px;
     opacity: 0;
     background:#015807;
@@ -241,7 +240,7 @@ ul {
     font-family: 'Playfair Display', serif;  
     font-style: italic;
     font-size: 14px;  
-    color: antiquewhite; 
+    color: rgb(248, 207, 209); 
     margin-top: 5px; 
     max-width: 80%;
 }
