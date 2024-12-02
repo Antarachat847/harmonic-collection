@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order with Image Selection</title>
+    <link rel="stylesheet" href="style-3.css">
+</head>
+<body>
+
+<div class="gallery">
+    <h2>Choose an Image</h2>
+    <div class="gallery-images">
+        <img src="images/jwellery.jpg" alt="Image 1" class="selectable-image">
+        <img src="images/painting.jpeg" alt="Image 2" class="selectable-image">
+        <img src="images/palm leaf.jpg" alt="Image 3" class="selectable-image">
+        <img src="images/utensils.jpeg" alt="Image 3" class="selectable-image">
+        <img src="images/plate.jpeg" alt="Image 3" class="selectable-image">
+        <img src="images/sari.jpeg" alt="Image 3" class="selectable-image">
+    </div>
+</div>
+
+<div class="email-widget">
+    <h3>Want Something Customized?</h3>
+    <p>We'd love to hear your customization ideas. Drop us a message and we'll be in touch!</p>
+    <div class="selected-image-container">
+        <img id="selected-image" src="" alt="Selected Image" style="display: none;">
+    </div>
+    <form action="mailto:krishnagshah1607@gmail.com" method="post" enctype="text/plain">
+        <div class="input-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <textarea name="customization" placeholder="Describe your request" rows="4" required></textarea>
+        <button type="submit">Send Request</button>
+    </form>
+</div>
+
+<script src="3.js"></script>
+
+</body>
+</html>
