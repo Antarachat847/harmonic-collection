@@ -2,18 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: rgb(175, 22, 22);
 }
-
-/* Gallery Section */
 .gallery {
     text-align: center;
     padding: 20px;
 }
 
 .gallery h2 {
-    color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #e7d292;
+    font-family: 'Hammersmith One', sans-serif;
+    letter-spacing: 4px;
 }
 
 .gallery-images {
@@ -28,41 +29,40 @@ body {
     height: 150px;
     object-fit: cover;
     cursor: pointer;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+    border: 2px solid rgb(175, 22, 22);
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .gallery-images img:hover {
     transform: scale(1.1);
-    border-color: #6950d0;
+    border-color: rgb(175, 22, 22);
 }
 
 /* Email Widget */
 .email-widget {
     background-color: #e7d292;
-    border: 4px solid #6950d0;
+    border: 4px solid rgb(175, 22, 22);
     padding: 20px;
     width: 90%;
     max-width: 800px;
     margin: 50px auto;
-    border-radius: 20px;
     text-align: center;
     position: relative;
 }
 
 .email-widget h3 {
-    font-size: 36px;
-    color: #6950d0;
-    font-weight: 600;
+    font-size: 23px;
+    color: rgb(175, 22, 22);
+    font-family: 'Hammersmith One', sans-serif;
+    letter-spacing: 4px;
     margin-bottom: 20px;
-    letter-spacing: -0.02em;
     text-transform: uppercase;
 }
 
 .email-widget p {
-    font-size: 20px;
-    color: #6950d0;
+    font-size: 16px;
+    color: rgb(175, 22, 22);
+    font-family: 'playfair display', serif;
     margin-bottom: 20px;
     line-height: 1.6;
 }
@@ -75,8 +75,7 @@ body {
 .selected-image-container img {
     width: 100%;
     height: auto;
-    border: 3px solid #6950d0;
-    border-radius: 10px;
+    border: 3px solid rgb(175, 22, 22);
     display: block;
 }
 
@@ -87,32 +86,78 @@ body {
     margin-bottom: 20px;
 }
 
-.email-widget input[type="text"],
-.email-widget input[type="email"],
-.email-widget textarea {
-    width: 48%;
-    padding: 10px;
-    border: 2px solid #6950d0;
-    border-radius: 10px;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.email-widget textarea {
+.email-widget form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 
+.input-group {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-between; /* Align inputs side-by-side */
+    width: 100%; /* Full width of the form */
+    gap: 15px; /* Space between input fields */
+    margin-bottom: 15px; /* Spacing below the group */
+}
+
+.email-widget input[type="text"],
+.email-widget input[type="email"] {
+    width: 48%; /* Each input takes 48% of the form width */
+    padding: 10px; /* Add padding for better text alignment */
+    border: 2px solid #e7d292; /* Match border color to design */
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Hammersmith One', sans-serif;
+    letter-spacing: 2px;
+    background-color: rgb(175, 22, 22); /* Red background */
+    color: #e7d292; /* Text color */
+    margin-bottom: 10px; /* Space between inputs */
+    box-sizing: border-box; /* Include padding in total width */
+}
+
+.email-widget textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Add padding for better usability */
+    border: 2px solid #e7d292;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Hammersmith One', sans-serif;
+    letter-spacing: 2px;
+    background-color: rgb(175, 22, 22);
+    color: #e7d292;
+    margin-bottom: 15px; /* Space below textarea */
+    resize: none; /* Disable resizing */
+    box-sizing: border-box;
+}
+
+.email-widget input::placeholder,
+.email-widget textarea::placeholder {
+    color: #e7d292; /* Placeholder text color */
+}
+
 .email-widget button {
-    background-color: #6950d0;
-    color: white;
+    background-color: rgb(175, 22, 22);
+    color: #e7d292;
     border: none;
     padding: 10px 20px;
     font-size: 18px;
+    font-family: 'Hammersmith One', sans-serif;
+    letter-spacing: 2px;
     cursor: pointer;
     border-radius: 10px;
     transition: background-color 0.3s ease;
+    text-align: center;
 }
 
 .email-widget button:hover {
-    background-color: #5740b0;
+    background-color: rgb(145, 18, 18);
+}
+
+@media (max-width: 768px) {
+    .email-widget input[type="text"],
+    .email-widget input[type="email"] {
+        width: 100%; /* Stack inputs on smaller screens */
+    }
 }
