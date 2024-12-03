@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order with Image Selection</title>
+    <link rel="stylesheet" href="style-8p.css">
+</head>
+<body>
+
+<div class="gallery">
+    <h2>Make your pick</h2>
+    <div class="gallery-images">
+        <img src="images/chata.jpeg" alt="Image 1" class="selectable-image">
+        <img src="images/chautha.jpeg" alt="Image 2" class="selectable-image">
+        <img src="images/dusra.jpeg" alt="Image 3" class="selectable-image">
+        <img src="images/panch.jpeg" alt="Image 3" class="selectable-image">
+        <img src="images/Phela copy.jpeg" alt="Image 3" class="selectable-image">
+        <img src="images/tisra.jpeg" alt="Image 3" class="selectable-image">
+    </div>
+</div>
+
+<div class="email-widget">
+    <h3>Place Order Here</h3>
+    <p>Let us know if you'd like any custom pieces below!</p>
+    <div class="selected-image-container">
+        <img id="selected-image" src="" alt="Selected Image" style="display: none;">
+    </div>
+    <form action="mailto:antarachat05@gmail.com" method="post" enctype="text/plain">
+        <div class="input-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <textarea name="customization" placeholder="Add Request" rows="4" required></textarea>
+        <button type="submit">Send Request</button>
+    </form>
+</div>
+
+<script src="8p.js"></script>
+
+</body>
+</html>
