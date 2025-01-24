@@ -3,44 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropdown Navigation</title>
-    <link href="https://github.com/notofonts/bengali" rel="stylesheet">
-    <link href="https://github.com/notofonts/gujarati" rel="stylesheet">
-    <link href="https://github.com/notofonts/kannada" rel="stylesheet">
-    <link href="https://openfontlicense.org" rel="stylesheet">
-    <link href="https://github.com/notofonts/oriya" rel="stylesheet">
+    <title>Your Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap" rel="stylesheet">
 </head>
 <body>
+
+
     <nav>
         <ul>
-            <li><a href="https://antarachat847.github.io/harmonic-collection/">Home</a></li>
-            <li>
-                <a href="#">Shop</a>
-                <ul class="dropdown">
-                    <li><a href="https://antarachat847.github.io/harmonic-collection/entry-2/">Kantha</a></li>
-                    <li><a href="https://antarachat847.github.io/harmonic-collection/entry-4/">Pattachitra</a></li>
-                    <li><a href="https://antarachat847.github.io/harmonic-collection/entry-6/">Sikki</a></li>
-                    <li><a href="https://antarachat847.github.io/harmonic-collection/entry-7/">Komartuli</a></li>
-                    <li><a href="https://antarachat847.github.io/harmonic-collection/entry-8/">Meenakari</a></li>
-                    <li><a href="https://antarachat847.github.io/harmonic-collection/entry-9/">Kathakali</a></li>
-                    <li><a href="https://antarachat847.github.io/harmonic-collection/entry-10/">Rajput Art</a></li>
-                </ul>
-            </li>
-            <li class="about-dropdown">
-                <a href="#">About</a>
-                <div class="about-text-box">
-                    <p>Kantha is a traditional form of embroidery originating from rural Bengal, practiced predominantly by women. Using layers of old saris and cloth, these artisans create intricate, textured quilts and garments by stitching simple, repetitive patterns like flowers, animals, and geometric designs. The craft is passed down through generations, with each piece telling a personal or cultural story. Kantha artists are known for their meticulous needlework, transforming discarded fabrics into vibrant, one-of-a-kind textiles that blend functionality with artistic expression, reflecting the rich heritage and everyday lives of the artisans.</p>
-                </div>
-            </li>
+          <li><a class="about">About</a></li>
+          <li><a class="connect" >Connect</a></li>
         </ul>
-    </nav>
-    <div class="animation">
-        <div class="container">
-            <div class="background-text" id="background-text"></div>
-            <div class="typewriter-text" id="typewriter-text"></div>
+      </nav>
+      <div class="connectlink">
+        <ul class="list">
+          <p>If you enjoyed looking at my work and have any constructive feedback or critique or if you wish to coloaborate or just wanna say hi, I am more than happy to connect. You can find me:<br><br>
+          
+          <a href="mailto:shahk153@newschool.com">@email</a><br>
+          <a href="https://www.instagram.com/krishna_shah16o7/">@instagram</a><br>
+          <a href="https://www.linkedin.com/in/krishna-shah-43471a243">@linkedin</a></p>
+        </ul>
+      </div>
+
+      <div class="aboutlink">
+        <ul class="list">
+          <p>If you enjoyed looking at my work and have any constructive feedback or critique or if you wish to coloaborate or just wanna say hi, I am more than happy to connect. You can find me:<br><br>
+          
+          <a href="mailto:shahk153@newschool.com">@email</a><br>
+          <a href="https://www.instagram.com/krishna_shah16o7/">@instagram</a><br>
+          <a href="https://www.linkedin.com/in/krishna-shah-43471a243">@linkedin</a></p>
+        </ul>
+      </div>
+
+
+    
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="video-container">
+            <video class="background-video" autoplay loop muted playsinline>
+                <source src="video/video-output-2F9752DC-B88E-489D-A5EA-713CF0B054FD.MOV" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="hero-text">
+            <h1>Antara Chatterjee</h1>
         </div>
     </div>
-    <script src="ani.js"></script>
+    <div class="clip">
+        <img src="images/clip.svg" alt="clip" />
+    </div>
+
+    <!-- Red Section -->
+    <div class="red-section">
+        
+        <div class="red-section-content">
+            <p>I’m Antara Chatterjee, a passionate designer blending creativity with purpose.<br> Explore my work in communication design, character illustration, and impactful projects that inspire change.</p>
+        </div>  
+        <div class="card-stack">
+            <a href="page3.html" class="card">
+                <img src="images/portfolio.png" alt="Card 1">
+            </a>
+            <a href="page2.html" class="card">
+                <img src="images/1.png" alt="Card 2">
+            </a>
+            <a href="page1.html" class="card">
+                <img src="images/2.png" alt="Card 3">
+            </a>
+            <a href="page4.html" class="card">
+                <img src="images/3.png" alt="Card 4">
+            </a>
+            <a href="page5.html" class="card">
+                <img src="images/4.png" alt="Card 5">
+            </a>
+            <a href="page6.html" class="card">
+                <img src="images/5.png" alt="Card 6">
+            </a>
+            <a href="page7.html" class="card">
+                <img src="images/6.png" alt="Card 7">
+            </a>
+        </div>
+    </div>
+
+    <script src="port.js"></script>
 </body>
 </html>
